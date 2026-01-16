@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 935px;
+    margin: 0 auto;
+}
+
+.phone-mockup {
+    display: none;
+}
+
+.phone-mockup img {
+    height: 618px;
+}
+
+.login-container {
+    width: 350px;
+}
+
+.login-box {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 51px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input {
+    padding: 9px 8px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background: #fafafa;
+    font-size: 12px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #a8a8a8;
+}
+
+.login-btn {
+    background: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.login-btn:hover {
+    background: #1877f2;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #dbdbdb;
+}
+
+.divider span {
+    padding: 0 18px;
+}
+
+.fb-login {
+    text-align: center;
+    color: #385185;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #00376b;
+    text-decoration: none;
+}
+
+.signup-box {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.signup-box a {
+    color: #0095f6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (min-width: 875px) {
+    .phone-mockup {
+        display: block;
+    }
+}
